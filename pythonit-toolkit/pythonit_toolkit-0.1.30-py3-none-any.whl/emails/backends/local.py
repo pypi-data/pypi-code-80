@@ -1,0 +1,22 @@
+from typing import Optional
+from .base import EmailBackend
+from pythonit_toolkit.emails.templates import EmailTemplate
+
+
+class LocalEmailBackend(EmailBackend):
+    def send_email(
+        self,
+        *,
+        template: EmailTemplate,
+        subject: str,
+        from_: str,
+        to: str,
+        variables: Optional[dict[str, str]] = None
+    ):
+        print(f"=== Email sending ===")
+        print(f"Template: {template}")
+        print(f"From: {from_}")
+        print(f"To: {to}")
+        print(f"Subject: {subject}")
+        print(f"Variables: {str(variables)}")
+        print(f"=== End Email sending ===")
