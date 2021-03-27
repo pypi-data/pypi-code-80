@@ -1,0 +1,1 @@
+from CokgenselSayilar import CokgenselSayilar
