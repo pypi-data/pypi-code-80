@@ -1,0 +1,2 @@
+import jorgebasiccalculator
+print(jorgebasiccalculator.multiply_numbers(54,54))
