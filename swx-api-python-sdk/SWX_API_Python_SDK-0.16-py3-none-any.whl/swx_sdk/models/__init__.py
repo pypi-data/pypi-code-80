@@ -1,0 +1,93 @@
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from swx_sdk.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from swx_sdk.model.action_delay import ActionDelay
+from swx_sdk.model.action_delay_input import ActionDelayInput
+from swx_sdk.model.action_delay_input_properties import ActionDelayInputProperties
+from swx_sdk.model.action_delay_input_properties_input import ActionDelayInputPropertiesInput
+from swx_sdk.model.action_delay_list_response import ActionDelayListResponse
+from swx_sdk.model.action_delay_response import ActionDelayResponse
+from swx_sdk.model.action_delete_response import ActionDeleteResponse
+from swx_sdk.model.action_list_response import ActionListResponse
+from swx_sdk.model.action_reboot import ActionReboot
+from swx_sdk.model.action_reboot_response import ActionRebootResponse
+from swx_sdk.model.action_request import ActionRequest
+from swx_sdk.model.action_request_delay import ActionRequestDelay
+from swx_sdk.model.action_request_delay_input import ActionRequestDelayInput
+from swx_sdk.model.action_response_element1 import ActionResponseElement1
+from swx_sdk.model.action_response_element1_delay import ActionResponseElement1Delay
+from swx_sdk.model.action_response_element2 import ActionResponseElement2
+from swx_sdk.model.action_response_element2_delay import ActionResponseElement2Delay
+from swx_sdk.model.action_response_element2_delay_input import ActionResponseElement2DelayInput
+from swx_sdk.model.action_response_element3 import ActionResponseElement3
+from swx_sdk.model.action_response_element3_reboot import ActionResponseElement3Reboot
+from swx_sdk.model.action_update_request import ActionUpdateRequest
+from swx_sdk.model.action_update_request_delay import ActionUpdateRequestDelay
+from swx_sdk.model.action_update_response import ActionUpdateResponse
+from swx_sdk.model.action_update_response_delay import ActionUpdateResponseDelay
+from swx_sdk.model.collection_list_response import CollectionListResponse
+from swx_sdk.model.collection_list_response_paging import CollectionListResponsePaging
+from swx_sdk.model.collection_request import CollectionRequest
+from swx_sdk.model.collection_response import CollectionResponse
+from swx_sdk.model.collection_update_request import CollectionUpdateRequest
+from swx_sdk.model.collection_update_response import CollectionUpdateResponse
+from swx_sdk.model.error_response import ErrorResponse
+from swx_sdk.model.error_response_error import ErrorResponseError
+from swx_sdk.model.event_high_cpu import EventHighCPU
+from swx_sdk.model.event_high_cpu_data import EventHighCPUData
+from swx_sdk.model.event_high_cpu_list_response import EventHighCPUListResponse
+from swx_sdk.model.event_high_cpu_response import EventHighCPUResponse
+from swx_sdk.model.event_request import EventRequest
+from swx_sdk.model.event_request_high_cpu import EventRequestHighCPU
+from swx_sdk.model.event_response import EventResponse
+from swx_sdk.model.event_response2 import EventResponse2
+from swx_sdk.model.event_response2_high_cpu import EventResponse2HighCPU
+from swx_sdk.model.event_response_high_cpu import EventResponseHighCPU
+from swx_sdk.model.model_list_response import ModelListResponse
+from swx_sdk.model.model_property import ModelProperty
+from swx_sdk.model.model_request import ModelRequest
+from swx_sdk.model.model_response import ModelResponse
+from swx_sdk.model.model_update_request import ModelUpdateRequest
+from swx_sdk.model.model_update_response import ModelUpdateResponse
+from swx_sdk.model.model_version_list_response import ModelVersionListResponse
+from swx_sdk.model.model_version_request import ModelVersionRequest
+from swx_sdk.model.model_version_response import ModelVersionResponse
+from swx_sdk.model.properties import Properties
+from swx_sdk.model.property_cpu import PropertyCPU
+from swx_sdk.model.property_cpu_response import PropertyCPUResponse
+from swx_sdk.model.property_cpu_response_links import PropertyCPUResponseLinks
+from swx_sdk.model.property_disk import PropertyDisk
+from swx_sdk.model.property_disk_response import PropertyDiskResponse
+from swx_sdk.model.property_memory import PropertyMemory
+from swx_sdk.model.property_memory_response import PropertyMemoryResponse
+from swx_sdk.model.secret import Secret
+from swx_sdk.model.thing_create_response import ThingCreateResponse
+from swx_sdk.model.thing_create_response_actions import ThingCreateResponseActions
+from swx_sdk.model.thing_create_response_credentials import ThingCreateResponseCredentials
+from swx_sdk.model.thing_create_response_credentials_http import ThingCreateResponseCredentialsHttp
+from swx_sdk.model.thing_create_response_credentials_mqtt import ThingCreateResponseCredentialsMqtt
+from swx_sdk.model.thing_create_response_credentials_mqtt_data import ThingCreateResponseCredentialsMqttData
+from swx_sdk.model.thing_create_response_credentials_mqtt_thing import ThingCreateResponseCredentialsMqttThing
+from swx_sdk.model.thing_create_response_events import ThingCreateResponseEvents
+from swx_sdk.model.thing_create_response_links import ThingCreateResponseLinks
+from swx_sdk.model.thing_create_response_properties import ThingCreateResponseProperties
+from swx_sdk.model.thing_delete_response import ThingDeleteResponse
+from swx_sdk.model.thing_delete_response_error_cluster_backend import ThingDeleteResponseErrorClusterBackend
+from swx_sdk.model.thing_list_response import ThingListResponse
+from swx_sdk.model.thing_request import ThingRequest
+from swx_sdk.model.thing_request_actions import ThingRequestActions
+from swx_sdk.model.thing_request_events import ThingRequestEvents
+from swx_sdk.model.thing_request_properties import ThingRequestProperties
+from swx_sdk.model.thing_response import ThingResponse
+from swx_sdk.model.thing_status_list_response import ThingStatusListResponse
+from swx_sdk.model.thing_status_response import ThingStatusResponse
+from swx_sdk.model.thing_update_request import ThingUpdateRequest
+from swx_sdk.model.thing_update_response import ThingUpdateResponse
