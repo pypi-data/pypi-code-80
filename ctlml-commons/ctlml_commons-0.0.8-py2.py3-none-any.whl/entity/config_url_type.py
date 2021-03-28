@@ -1,0 +1,23 @@
+from __future__ import annotations
+
+from enum import Enum, auto
+from typing import Optional
+
+
+class ConfigUrlType(Enum):
+    ACCOUNTS = auto()
+    CANDLES = auto()
+    ROBINHOOD = auto()
+    STATS = auto()
+    STOCKS = auto()
+    TICKERS = auto()
+    TRANSACT = auto()
+    USERS = auto()
+
+    @staticmethod
+    def to_enum(value: str) -> Optional[ConfigUrlType]:
+        v: str = value.upper().replace(" ", "-").replace("-", "_")
+        return ConfigUrlType[v]
+
+    def value(self) -> str:
+        return self.name.lower()
