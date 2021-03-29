@@ -1,0 +1,3 @@
+import bingwall
+
+bingwall.main()
