@@ -1,0 +1,2 @@
+class OptionAlreadyExists(Exception):
+    pass
