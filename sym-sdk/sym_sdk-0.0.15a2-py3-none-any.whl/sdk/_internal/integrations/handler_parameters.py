@@ -1,0 +1,10 @@
+class HandlerParameters:
+    USER = "user"
+    USER_ID = "user_id"
+    ORG_ID = "org_id"
+    ESCALATION_POLICY_NAME = "escalation_policy_name"
+    ESCALATION_POLICY_IDS = "escalation_policy_ids"
+    SCHEDULE_NAME = "schedule_name"
+    SCHEDULE_IDS = "schedule_ids"
+    FLOW_NAME = "flow_name"
+    ENVIRONMENT_NAME = "environment_name"
