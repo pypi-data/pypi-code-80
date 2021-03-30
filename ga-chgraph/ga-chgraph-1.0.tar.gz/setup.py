@@ -1,0 +1,20 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='ga-chgraph',
+    version=1.0,
+    packages=find_packages(),
+    entry_points={
+        "console_scripts": ['GA_CHGRAPH = clickhouse_api_server.app:main']
+    },
+    install_requires=[	
+	"tornado-swagger==1.2.8",
+	"ujson==4.0.1",
+	"clickhouse-driver==0.2.0",
+	"tornado==5.0.2"
+    ],
+    license='GNU General Public License v3.0',
+    author='Liu Feng',
+    author_email='18389597276@163.com',
+    description='Graph Function'
+)
