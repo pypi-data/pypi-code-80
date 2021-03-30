@@ -1,0 +1,4 @@
+API_KEYS = {
+    "DISCORD_TOKEN": 'Nzg0NTE0NzA0NDA4MDUxNzMz.X8qaQQ.CSCqskFQmf1zdQWVQxgq-Ek9NjI',
+    "ADMIN_LICHESS_TOKEN": 'wzcigIznavpHCRM1'
+}
