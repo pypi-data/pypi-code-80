@@ -1,0 +1,3 @@
+SAVVIHUB_IMAGES = 'savvihub-images'
+
+SAVVIHUB_PLOTS_FILETYPE_IMAGE = 'image'
