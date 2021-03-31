@@ -1,0 +1,2 @@
+class OptionTypeIsUndefined(Exception):
+    pass
