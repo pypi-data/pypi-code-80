@@ -1,0 +1,35 @@
+from ......Internal.Core import Core
+from ......Internal.CommandsGroup import CommandsGroup
+from ......Internal import Conversions
+from ...... import enums
+from ...... import repcap
+
+
+# noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection
+class Mode:
+	"""Mode commands group definition. 1 total commands, 0 Sub-groups, 1 group commands"""
+
+	def __init__(self, core: Core, parent):
+		self._core = core
+		self._base = CommandsGroup("mode", core, parent)
+
+	def set(self, mode: enums.SystConfOutpMapMatMode, channel=repcap.Channel.Default) -> None:
+		"""SCPI: SCONfiguration:OUTPut:MAPPing:IQOutput<CH>:MODE \n
+		Snippet: driver.sconfiguration.output.mapping.iqOutput.mode.set(mode = enums.SystConfOutpMapMatMode.ADD, channel = repcap.Channel.Default) \n
+		No command help available \n
+			:param mode: No help available
+			:param channel: optional repeated capability selector. Default value: Nr1 (settable in the interface 'IqOutput')"""
+		param = Conversions.enum_scalar_to_str(mode, enums.SystConfOutpMapMatMode)
+		channel_cmd_val = self._base.get_repcap_cmd_value(channel, repcap.Channel)
+		self._core.io.write(f'SCONfiguration:OUTPut:MAPPing:IQOutput{channel_cmd_val}:MODE {param}')
+
+	# noinspection PyTypeChecker
+	def get(self, channel=repcap.Channel.Default) -> enums.SystConfOutpMapMatMode:
+		"""SCPI: SCONfiguration:OUTPut:MAPPing:IQOutput<CH>:MODE \n
+		Snippet: value: enums.SystConfOutpMapMatMode = driver.sconfiguration.output.mapping.iqOutput.mode.get(channel = repcap.Channel.Default) \n
+		No command help available \n
+			:param channel: optional repeated capability selector. Default value: Nr1 (settable in the interface 'IqOutput')
+			:return: mode: No help available"""
+		channel_cmd_val = self._base.get_repcap_cmd_value(channel, repcap.Channel)
+		response = self._core.io.query_str(f'SCONfiguration:OUTPut:MAPPing:IQOutput{channel_cmd_val}:MODE?')
+		return Conversions.str_to_scalar_enum(response, enums.SystConfOutpMapMatMode)
