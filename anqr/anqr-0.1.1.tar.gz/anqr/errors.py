@@ -1,0 +1,1 @@
+class InvalidByteColorError(Exception): pass
