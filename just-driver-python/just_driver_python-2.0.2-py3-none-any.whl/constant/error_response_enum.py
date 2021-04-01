@@ -1,0 +1,9 @@
+from enum import Enum
+
+
+class ErrorResponseEnum(Enum):
+    UNKNOWN_ERROR_CODE = -1
+    MISSING_CONNECTION_ERROR_CODE = 1
+    UNAUTHORIZED_ERROR_CODE = 2
+    UNKNOWN_SQL_STATE = "00000"
+    UNAUTHORIZED_SQL_STATE = "00002"
