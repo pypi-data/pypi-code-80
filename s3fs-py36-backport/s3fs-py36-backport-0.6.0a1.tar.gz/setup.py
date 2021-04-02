@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+
+from setuptools import setup
+import versioneer
+
+setup(name='s3fs-py36-backport',
+      version=versioneer.get_version(),
+      cmdclass=versioneer.get_cmdclass(),
+      classifiers=[
+          'Development Status :: 4 - Beta',
+          'Intended Audience :: Developers',
+          'License :: OSI Approved :: BSD License',
+          'Operating System :: OS Independent',
+          'Programming Language :: Python :: 3.7',
+          'Programming Language :: Python :: 3.8',
+      ],
+      description='s3fs backport to python 3.6',
+      url='http://github.com/isidentical-backports/s3fs/',
+      license='BSD',
+      packages=['s3fs'],
+      python_requires='>= 3.6',
+      install_requires=[open('requirements.txt').read().strip().split('\n')],
+      extras_require = {
+          'awscli': ['aiobotocore[awscli]'],
+          'boto3': ['aiobotocore[boto3]'],
+      },
+      zip_safe=False)
