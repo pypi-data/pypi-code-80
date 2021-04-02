@@ -1,0 +1,15 @@
+class Feed:
+    def __init__(self, feed_definition):
+        self.feed_id = feed_definition['feed_id']
+        self.source_system = feed_definition['source_system']
+        self.feed_type = feed_definition['feed_type']
+        self.feed_description = feed_definition['feed_description']
+        self.file_extension = feed_definition['file_extension']
+        self.source_columns_historical = feed_definition['source_columns_historical']
+        self.file_path_prefix = feed_definition['file_path_prefix']
+        self.field_delimiter = feed_definition['field_delimiter']
+        self.field_delimiter_historical = feed_definition['field_delimiter_historical']
+        self.target_table_name = feed_definition['target_table_name']
+        self.file_encoding = feed_definition['file_encoding']
+        self.source_columns = feed_definition['source_columns']
+        self.default_value_for_missing_columns = feed_definition['default_value_for_missing_columns']
