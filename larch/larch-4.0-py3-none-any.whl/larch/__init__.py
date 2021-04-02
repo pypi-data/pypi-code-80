@@ -1,0 +1,1 @@
+raise ImportError("larch cannot be installed with pip, try installing using conda-forge instead.\nSee https://larch.newman.me/getting-started.html for instructions.")
