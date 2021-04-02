@@ -1,0 +1,2 @@
+class LeapdnaError(Exception):
+    pass
