@@ -1,0 +1,39 @@
+# import sys,os
+# sys.path.append(os.path.dirname(__file__) + os.sep + '..//..//..//src')
+from makeblock import CyberPi
+
+cyber = CyberPi.create()
+controller = cyber.controller
+audio = cyber.audio
+display = cyber.display
+console = cyber.console
+chart = cyber.chart
+linechart = cyber.linechart
+barchart = cyber.barchart
+table = cyber.table
+led = cyber.led
+wifi = cyber.wifi
+cloud = cyber.cloud
+ultrasonic = cyber.ultrasonic
+sound_sensor = cyber.sound_sensor
+pir = cyber.pir
+light_sensor = cyber.light_sensor
+multi_touch = cyber.multi_touch
+joystick = cyber.joystick
+angle_sensor = cyber.angle_sensor
+slider = cyber.slider
+button = cyber.button
+pocket = cyber.pocket
+ranging_sensor = cyber.ranging_sensor
+motion_sensor = cyber.motion_sensor
+temp_sensor = cyber.temp_sensor
+humiture = cyber.humiture
+mq2 = cyber.mq2
+flame_sensor = cyber.flame_sensor
+magnetic_sensor = cyber.magnetic_sensor
+led_matrix = cyber.led_matrix
+rgb_led = cyber.rgb_led
+led_driver = cyber.led_driver
+servo_driver = cyber.servo_driver
+motor_driver = cyber.motor_driver
+speaker = cyber.speaker
