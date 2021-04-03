@@ -1,0 +1,25 @@
+def findw(sents):
+    dummy = ''
+    wordsta = []
+    i = 0
+    cw = ''
+    a = i
+    sents = str(sents) + str(' ')
+    for l in range(int(sents.__len__() / 2)):
+        wordsta += ' '
+    for j in sents:
+        if j == ' ':
+            wordsta[i] = str(cw)
+            cw = ''
+            i += 1
+        else:
+            cw = str(cw) + str(j)
+    a = i
+    for j in range(wordsta.__len__()):
+        if j in range(i):
+            pass
+        else:
+            wordsta[j] = ''
+        a += 1
+    # § bug fixed §
+    return wordsta
